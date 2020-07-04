@@ -1,3 +1,9 @@
+# In this class there are print command which is use to understand better of what is happening in the class methods 
+# The print statement is not necessary and can be remove without any harm to the code
+# MinHeap is use to keep tracks of mimimum value in a data set
+
+
+
 class MinHeap:
   def __init__(self):
     self.heap_list = [None]
@@ -53,9 +59,7 @@ class MinHeap:
     print("Adding: {0} to {1}".format(element, self.heap_list))
     self.heap_list.append(element)
     self.heapify_up()
-
   
-    
   def heapify_up(self):
     idx = self.count
     while self.parent_idx(idx) > 0:
@@ -67,7 +71,7 @@ class MinHeap:
       idx = self.parent_idx(idx)
     print("HEAP RESTORED! {0}".format(self.heap_list))
     print("")
-
+   
   def heapify_down(self):
   # starts at 1 because we swapped first and last elements
     idx = 1
@@ -76,11 +80,8 @@ class MinHeap:
       smaller_child_idx = self.get_smaller_child_idx(idx)
       child = self.heap_list[smaller_child_idx]
       parent = self.heap_list[idx]
-      
       if parent > child:
         self.heap_list[idx] = child
         self.heap_list[smaller_child_idx] = parent
       idx = smaller_child_idx
-    print("Heap Restored! {}".format(self.heap_list))
-
-    
+    print("HEAP RESTORED! {0}".format(self.heap_list)) 
