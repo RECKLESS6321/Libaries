@@ -69,6 +69,7 @@ class MinHeap:
     print("")
 
   def heapify_down(self):
+  # starts at 1 because we swapped first and last elements
     idx = 1
     while self.child_present(idx):
       print("Heapifying down!")
