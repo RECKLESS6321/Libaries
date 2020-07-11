@@ -1,3 +1,10 @@
+# When tackling complex problems, it’s a massive advantage if you can model the problem as a graph.
+#Can be initialized as a directed graph, where edges are set in one direction.
+#Stores every vertex inside a dictionary
+#Vertex data is the key and the vertex instance is the value.
+#Has methods to add vertices, edges between vertices, and determine if a path exists between two vertices.
+
+
 class Graph:
   def __init__(self, directed = False):
     self.graph_dict = {}
