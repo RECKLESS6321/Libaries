@@ -1,5 +1,5 @@
 # Merge sort is a sorting algo that use divide and conquer algo
-
+# Merge sort run time is omega(N*log(N))
 
 def merge_sort(items):
   if len(items) <= 1:
