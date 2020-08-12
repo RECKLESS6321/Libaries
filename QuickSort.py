@@ -1,5 +1,4 @@
 # We established a base case where the algorithm will complete when the start and end pointers indicate a list with one or zero elements
-
 # If we haven’t hit the base case, we randomly selected an element as the pivot and swapped it to the end of the list
 # We then iterate through that list and track all the “lesser than” elements by swapping them with the iteration index and incrementing a lesser_than_pointer
 # Once we’ve iterated through the list, we swap the pivot element with the element located at lesser_than_pointer
