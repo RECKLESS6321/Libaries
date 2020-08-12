@@ -4,9 +4,6 @@
 # Once we’ve iterated through the list, we swap the pivot element with the element located at lesser_than_pointer
 # With the list partitioned into two sub-lists, we repeat the process on both halves until base cases are met.
 
-
-
-
 from random import randrange, shuffle
 
 def quicksort(list, start, end):
