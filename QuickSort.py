@@ -1,3 +1,12 @@
+# We established a base case where the algorithm will complete when the start and end pointers indicate a list with one or zero elements
+
+
+
+
+
+
+
+
 from random import randrange, shuffle
 
 def quicksort(list, start, end):
